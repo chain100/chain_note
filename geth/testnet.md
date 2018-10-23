@@ -18,6 +18,20 @@ https://faucet.rinkeby.io/
 geth --datadir /chain/geth_rinkeby --rinkeby --syncmode full --rpc console 2>/chain/geth_rinkeby/out.log
 ```
 
+> eth.syncing
+
+```
+{
+  currentBlock: 17796,
+  highestBlock: 3209197,
+  knownStates: 0,
+  pulledStates: 0,
+  startingBlock: 0
+}
+```
+
+当eth.syncing返回false说明同步完成，要等同步完成后才能进行账户余额查询和转账的操作
+
 参考资料
 
 https://www.jianshu.com/p/e69d00c59c95

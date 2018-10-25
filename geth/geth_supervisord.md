@@ -1,7 +1,9 @@
 
 * 安装supervisord
-> pip install supervisor
-> echo_supervisord_conf > /etc/supervisord.conf
+```
+pip install supervisor
+echo_supervisord_conf > /etc/supervisord.conf
+```
 
 * 修改supervisord.conf
 ```
@@ -36,8 +38,10 @@ stdout_logfile =/home/chain/geth_rinkeby/out.log
 stderr_logfile =/home/chain/geth_rinkeby/out_err.log
 ```
 启动supervisord
-> supervisord -c /etc/supervisord.conf
-> supervisorctl status
+```
+supervisord -c /etc/supervisord.conf
+supervisorctl status
+```
 查看结果
 
 
